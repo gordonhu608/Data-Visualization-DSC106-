@@ -1,0 +1,108 @@
+
+<html>  
+    <head>  
+    <script type="text/javascript" src="app.js">
+        </script>  
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    </head>
+    <body onload=final()> 
+    
+    
+    <div>
+    <h1 class="title"> Final Project of Group 50 </h1>
+    <h3 class="title"> Group Member: Wenbo Hu, Martin Thai, Wenqian Zhao</h3>
+    <div>
+        <b>We chose this dataset to deal with the issue of global warming and answering governments' efforts in promoting sustainability. 
+        Bike sharing has been an economical, ecological, and popular choice in dense city areas where the distance of traveling is relatively short. As this service is
+        not yet popular in the La Jolla area, we would like to dig more into this topic and discover some facts from our visualizations. </b>
+    </div>
+    <br>
+    <div>
+        The data is downloaded from Kaggle through https://www.kaggle.com/benhamner/sf-bay-area-bike-share.
+            
+    </div>
+    </div>
+    
+    <div>
+    <h3>Visualization 1:</h3>
+        <div>Goal:
+            <br>
+            Explore the trend of trips number in the past year monthly
+        </div>
+    <div id="Vis1">
+        </div>
+        <h4>Plot 1: </h4> 
+        <p> 
+        </p>
+        <select id="selectButtonVis1"></select>
+        <div id="vis1_plot" class="center_plot">
+        </div>
+    </div>    
+    </div>
+        
+    <div>
+    <h3>Question 2:</h3>
+        <div>Goal:<br>
+            Explore the relation between the temperature of the day and time duration of the bike rides
+        </div>
+    <div id="Vis2">
+        </div>
+        <h4>Plot:</h4>
+        <div id="vis2_plot" class="center_plot">
+        </div>
+    </div>    
+    
+    <div>
+    <h3>Question 3:</h3>
+        <div> Goal: <br>
+           Explore the busyness of each station at different time of a day:
+            
+        </div>
+    <div id="Vis3">
+        <h4>Plot:</h4>
+        <div id="Vis3_plot" class="center_plot">
+            <div id = "tooltip_vis3" style="opacity: 0;"> 
+                <p><strong>Number of Trips from This Station:</strong></p>
+                <p><span id = "value" style="font-size:2vw" > -10 </span></p>
+            </div>
+        </div>
+    </div>    
+       
+    <div>
+    <h3>Visualization 4:</h3>
+        <div> Goal: <br>
+            Explore the number of trips by different users (subscribers and casual customers)
+    
+        </div>
+    <div id="Vis4">
+        </div>
+        <h4>Plot:</h4>
+        <input type="radio" name="controlBar" value="stack" checked>All Users<br>
+        <input type="radio" name="controlBar" value="Casual Customers">Customers<br>
+        <input type="radio" name="controlBar" value="Subscribers">Subscribers<br>
+        <div id="vis4_plot" class="center_plot">
+        </div>
+    </div>    
+    
+    <div>
+    <h3>Visualization 5:</h3>
+        <div> Explore the distribution of duration of most hot 7 stations at SF on 01/01/2014<br>
+            The color I choose is low in hue and light which reduce the feeling of eyesore and give user a good experience of reading the graph. <br>
+            Here the marks are lines and areas, the channels are sizes and positions.
+        </div>
+    <div id="q5">
+        </div>
+        <h4>Plot:</h4>
+        <div id="vis5_plot" class="center_plot">
+        </div>
+    </div>    
+       
+        
+       
+    </body>  
+    </html>  
