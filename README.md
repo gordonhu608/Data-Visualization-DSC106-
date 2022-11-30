@@ -1,2 +1,2 @@
 # Data-Visualization-DSC106-
-Data Visualization Course work using javascript and html
+Showing the final project of Data Visualization Course using javascript and html
